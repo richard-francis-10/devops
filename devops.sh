@@ -32,4 +32,8 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 ###################################
 # Install Powershell
-sudo snap install powershell --classic
+#sudo snap install powershell --classic
+wget https://packages.microsoft.com/config/ubuntu/24.04/packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+sudo apt-get update
+sudo apt-get install -y powershell
